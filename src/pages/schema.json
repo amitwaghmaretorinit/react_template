@@ -1,0 +1,30 @@
+{
+  "crud": {
+    "name": {
+      "type": "string",
+      "label": "Name",
+      "required": "true",
+      "placeholder": "Enter your name",
+      "inputType": "text"
+    },
+    "age": {
+      "type": "number",
+      "label": "Age",
+      "required": "false",
+      "placeholder": "Enter your age",
+      "inputType": "number"
+    },
+    "branch": {
+      "type": "string",
+      "label": "Branch",
+      "required": "true",
+      "placeholder": "Enter your branch",
+      "inputType": "text"
+    }
+  },
+  "list": {
+    "name": { "width": "40%", "title": "Name" ,"key":"name"},
+    "age": { "width": "20%", "title": "Age","key":"age" },
+    "branch": { "width": "40%", "title": "Branch","key":"branch" }
+  }
+}

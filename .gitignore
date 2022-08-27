@@ -1,0 +1,7 @@
+node_modules
+coverage
+build
+.github/workflows
+.env
+.env.qa
+ 

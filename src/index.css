@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,400&display=swap");
+
+    /* @import 'node_modules/slick-carousel/slick/slick'; */
+
+body{
+    font-family: Poppins !important;
+}
+button {
+  border-color: transparent;
+}
+.ant-notification.ant-notification-topRight {
+  right: auto !important;
+  top: auto !important;
+  bottom: 0px !important;
+  left: 40% !important;
+}
+.ant-notification-notice {
+  background: #000;
+}
+.ant-notification-notice {
+  background: #000 !important;
+  color: #fff;
+}
+.ant-notification-notice-message {
+  color: #5fcfa9 !important;
+  font-size: 16px;
+  line-height: 24px;
+}
+.ant-notification-notice-error .ant-notification-notice-message {
+  color: red !important;
+  font-size: 16px;
+  line-height: 24px;
+}
+.ant-notification-close-x {
+  color: #fff !important;
+}
+.ant-notification-notice-description {
+  font-size: 12px !important;
+  line-height: 20px;
+}
+.ant-notification-close-x::before {
+  /* content: 'UNDO'; */
+  color: #fff !important;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.ant-tooltip {
+  font-size: 12px !important;
+}
+
+/* Radio button ant design start */
+
+.ant-radio-checked .ant-radio-inner {
+  border-color: #4e1c95 !important;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+  background-color: #4e1c95;
+}
+
+.ant-radio:hover .ant-radio-inner {
+  border-color: #4e1c95 !important;
+}
+.ant-notification-notice-description {
+  padding-right: 40px;
+}
+.ant-tabs-tab:hover {
+  color: unset !important;
+}
+.ant-tabs-tab-btn:focus,
+.ant-tabs-tab-remove:focus,
+.ant-tabs-tab-btn:active,
+.ant-tabs-tab-remove:active {
+  color: unset !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--color-system-purple-purple-6) !important;
+  border-color: var(--color-system-purple-purple-6) !important;
+}
+.ant-select-multiple .ant-select-selection-item-content{
+  max-width: 555px;
+}
+
+.slick-track{
+    min-width:100%;
+}
+.downloadbtn{
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 5px 24px;
+    line-height: 22px;
+    font-size: 12px;
+    height: auto;
+    line-height: 22px;
+    border-radius: 8px;
+    right: 80px;
+    top: 24px;
+    position: absolute;
+}
+.ril__toolbarRightSide{
+    padding-top: 12px;
+}
+.ril__toolbar{
+    height: 70px;
+}
+.ril__toolbarRightSide {
+    padding-top: 6px;
+}
+.menuButton{
+    font-size:14px;
+    background:transparent;
+  }
+  .underline{
+    text-decoration: underline;
+  }
+  .boldPurple{
+    font-weight: 600;
+    color: var(--color-system-purple-purple-6);
+  }
+  .rangeDash::after{
+    content: '-';
+    position: absolute;
+    right: -4px;
+    top: 19%;
+  }
+/* Radio button ant design end */
+
+.ant-dropdown-menu-title-content button[disabled]{
+  color: var(--color-system-gray-gray-7);
+}
+.mobileRemoveButton{
+  border: 1px solid #382561;
+  border-radius:5px;
+  padding: 8px;
+}
+@media(max-width:1007px){
+  .ant-select-multiple .ant-select-selection-item-content {
+    max-width: 200px;
+}
+}
