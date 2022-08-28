@@ -138,7 +138,7 @@ An enterprise react template application showcasing - T  Global state management
 ```
 
 
--Take a look at the following files
+Take a look at the following files
 
--[tsconfig.paths.json](tsconfig.paths.json)
+- [tsconfig.paths.json](tsconfig.paths.json)
     
