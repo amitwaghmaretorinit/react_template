@@ -69,7 +69,7 @@ An enterprise react template application showcasing -   Global state management,
 
   - [config-overrides.js](config-overrides.js) 
    
-## Testing using @testing-library/react
+## Testing using [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro/)
 
 - Testing is done using the @testing-library/react.
   
