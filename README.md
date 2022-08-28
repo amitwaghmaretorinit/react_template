@@ -61,7 +61,7 @@ An enterprise react template application showcasing - T  Global state management
 
    
 
-## Bundling your application using [ReactAppRewired]https://www.npmjs.com/package/react-app-rewired
+## Bundling your application using [ReactAppRewired](https://www.npmjs.com/package/react-app-rewired)
 
 - We're using and configuring webpack to bundle our React application.
 
