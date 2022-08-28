@@ -10,7 +10,7 @@
   </p>
 
   <p>
-An enterprise react template application showcasing - T  Global state management,  a network layer, component library integration, localization, route configuration, lazy loading
+An enterprise react template application showcasing -   Global state management,  a network layer, component library integration,   route configuration, lazy loading
   </p>
 
 ---
