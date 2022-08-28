@@ -6,7 +6,6 @@ import { Route, Routes } from 'react-router-dom';
 
 
 const RoutesComponent = () => {
-
   return (
     <Suspense fallback={<Spin />}>
       <Header />
