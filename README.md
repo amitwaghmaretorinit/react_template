@@ -65,7 +65,6 @@ An enterprise react template application showcasing - T  Global state management
   - [.storybook/webpack.config.js](.storybook/webpack.config.js)
   - [.storybook/config.js](.storybook/config.js)
   - [.storybook/addons.js](.storybook/addons.js)
-  - [app/components/Clickable/stories/Clickable.stories.js](app/components/Clickable/stories/Clickable.stories.js)
 
 ## Bundling your application using Webpack
 
