@@ -66,15 +66,13 @@ An enterprise react template application showcasing - T  Global state management
   - [.storybook/config.js](.storybook/config.js)
   - [.storybook/addons.js](.storybook/addons.js)
 
-## Bundling your application using Webpack
+## Bundling your application using [ReactAppRewired]https://www.npmjs.com/package/react-app-rewired
 
 - We're using and configuring webpack to bundle our React application.
 
   Take a look at the following files
 
-  - [internals/webpack/webpack.config.base.js](internals/webpack/webpack.config.base.js)
-  - [internals/webpack/webpack.config.dev.js](internals/webpack/webpack.config.dev.js)
-  - [internals/webpack/webpack.config.prod.js](internals/webpack/webpack.config.prod.js)
+  - [config-overrides.js](config-overrides.js) 
    
 ## Testing using @testing-library/react
 
@@ -135,5 +133,5 @@ An enterprise react template application showcasing - T  Global state management
 
 Take a look at the following files
 
-- [internals/webpack/webpack.base.babel.js](internals/webpack/webpack.base.babel.js)
+- [tsconfig.paths.json](tsconfig.paths.json)
     
