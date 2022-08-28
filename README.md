@@ -77,7 +77,14 @@ An enterprise react template application showcasing - T  Global state management
  
 ### Aliasing
  
- "@assets/*": [
+ ```{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ability/*":[
+        "src/ability/*"
+      ],
+      "@assets/*": [
         "src/assets/*"
       ],
       "@constants/*": [
@@ -125,7 +132,9 @@ An enterprise react template application showcasing - T  Global state management
       "@hooks/*": [
         "src/hooks/*"
       ]
-
+    }
+  }
+}```
 Take a look at the following files
 
 - [tsconfig.paths.json](tsconfig.paths.json)
