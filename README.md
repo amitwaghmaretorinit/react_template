@@ -59,11 +59,7 @@ An enterprise react template application showcasing - T  Global state management
 
 - Storybooks allows you to work on one component at a time. You can develop entire UIs without needing to start up a complex dev stack, force certain data into your database, or navigate around your application.
 
-  Take a look at the following files
-
-  - [.storybook/webpack.config.js](.storybook/webpack.config.js)
-  - [.storybook/config.js](.storybook/config.js)
-  - [.storybook/addons.js](.storybook/addons.js)
+   
 
 ## Bundling your application using [ReactAppRewired]https://www.npmjs.com/package/react-app-rewired
 
