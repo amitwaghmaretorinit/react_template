@@ -50,7 +50,7 @@ An enterprise react template application showcasing -   Global state management,
 
 - Reusing components from [Ant design](https://ant.design)
 
-  ## Routing using react-router
+## Routing using react-router
 
 - Routing is done using [React Router](https://github.com/ReactTraining/react-router)
  
