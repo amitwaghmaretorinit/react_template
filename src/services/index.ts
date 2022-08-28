@@ -71,7 +71,7 @@ class Serivce {
       const BASE_URL = basePath
         ? basePath
         : url === "v1/user-info"
-        ? process.env.REACT_APP_BASE_URL_original
+        ? process.env.REACT_APP_BASE_URL
         : getBaseURL();
 
       try {
@@ -102,34 +102,7 @@ class Serivce {
   getAuthToken = () => {
     return Cookies.get("token") ? Cookies.get("token") : "";
   };
-
-  getTest = async (url: string, basePath?: string, controller?: any) => {
-    return new Promise((resolve, reject) => {
-      const headers = this.getHeader();
-      let dataForMethod: any = { headers: headers };
-      if (controller) {
-        dataForMethod = {
-          ...dataForMethod,
-          signal: controller.signal,
-        };
-      }
-
-      const BASE_URL = basePath ? basePath : getBaseURL();
-
-      try {
-        axios
-          .get(`${BASE_URL}${url}`, dataForMethod)
-          .then((res) => {
-            return resolve({ data: res.data, status: res.status });
-          })
-          .catch((err) => {
-            return reject(this.handleError(err));
-          });
-      } catch (err) {
-        return reject(err);
-      }
-    });
-  };
+ 
   post = (url: string, params: {}, basePath?: string, controller?: any) => {
     return new Promise((resolve, reject) => {
       const headers = this.getHeader();
