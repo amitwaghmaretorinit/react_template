@@ -36,7 +36,7 @@ An enterprise react template application showcasing -   Global state management,
 
 - Global state management using [Redux Sauce](https://github.com/infinitered/reduxsauce)
   
- ## Network requests using apisauce
+ ## Network requests using Axios
 
 - API calls using [Axios](https://github.com/axios/axios)
  
