@@ -6,8 +6,8 @@ import rawDataReducer from "./rawDataReducer";
 const reducer = combineReducers({
   auth: authReducer,
   user: userProfileReducer,
- 
-});
+  rawData: rawDataReducer,
+ });
 //@ts-ignore
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
