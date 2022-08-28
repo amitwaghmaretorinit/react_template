@@ -1,17 +1,6 @@
  
 
-<div>
-  <a href="https://torinit.com/" align="left" style="margin-left: 0;">
-    <img src="https://torinit.com/static/media/loader.e1dc4171.gif">
-  </a>
-  <p>
-    <h1 align="left">React Template
-    </h1>
-  </p>
-
-  <p>
-An enterprise react template application showcasing -   Global state management,  a network layer, component library integration,   route configuration, lazy loading
-  </p>
+ <img width="1435" alt="Screenshot 2022-08-28 at 2 59 39 PM" src="https://user-images.githubusercontent.com/79451605/187067329-95f8c3a6-75fb-44db-b0e7-ec9899c9930c.png">
 
 ---
 
