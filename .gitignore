@@ -4,4 +4,4 @@ build
 .github/workflows
 .env
 .env.qa
- 
+.DS_Store
