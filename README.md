@@ -74,6 +74,9 @@ An enterprise react template application showcasing -   Global state management,
 - Testing is done using the @testing-library/react.
   
 
+### Folowing Atomic Design Pattern
+  <img src="https://miro.medium.com/max/1400/1*PcQ-m317YX6ct9ccBi6H1Q.png" />
+
  
 ### Aliasing
  
