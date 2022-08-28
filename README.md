@@ -21,8 +21,7 @@ An enterprise react template application showcasing - T  Global state management
 
 </div>
 
-### Built using [react-hero](https://github.com/amitwaghmaretorinit/ReactHero)
-
+ 
   
 
 ## Getting Started
