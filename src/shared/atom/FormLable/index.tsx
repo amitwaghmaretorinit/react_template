@@ -17,15 +17,15 @@ display:block;
 
 interface FormLabelProps {
   text: string | React.ReactNode;
-  ismandatory?: boolean;
+  isMandatory?: boolean;
 }
 
 export const Label = (props: FormLabelProps): JSX.Element => {
-  const { text , ismandatory} = props;
+  const { text , isMandatory} = props;
   return (
   <LabelText>
       {text} 
-      {ismandatory?<span style={{color:"red"}}>*</span>:null}
+      {isMandatory?<span style={{color:"red"}}>*</span>:null}
   </LabelText>
   );
 };
