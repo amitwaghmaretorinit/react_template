@@ -1,19 +1,18 @@
 import React from "react";
-import { useFormik } from "formik";
 import { Flex } from "@atom/Flex";
 import { Label } from "@atom/FormLable";
 import { Input } from "@atom/Input";
-
+import { useFormik } from "formik";
 import { validationSchema } from "./schema";
 
-export default function AgentPages() {
+export default function AddEditEmployees() {
   const onSubmit = (values: any) => {};
-
   const formik = useFormik({
     initialValues: {
       name: "",
       age: "",
-      branch: ""
+      branch: "",
+      city: ""
     },
     validationSchema: validationSchema,
     onSubmit: (values: any) => onSubmit(values)
@@ -23,27 +22,28 @@ export default function AgentPages() {
 
   return (
     <Flex direction="column">
-      <title>Edit AgentPages</title>
+      <title>Edit Employees</title>
+
       <Flex direction="column">
-        <Label text="Name" ismandatory={true} />
+        <Label text="Product Name" ismandatory={true} />
         <Input
           id="name"
           name="name"
           onChange={handleChange}
           value={values.name}
           type={"text"}
-          placeholder="Enter your name"
+          placeholder="Enter your product name"
         />
       </Flex>
       <Flex direction="column">
-        <Label text="Age" ismandatory={true} />
+        <Label text="Price" ismandatory={true} />
         <Input
           id="age"
           name="age"
           onChange={handleChange}
           value={values.age}
           type={"number"}
-          placeholder="Enter your age"
+          placeholder="Enter your price"
         />
       </Flex>
       <Flex direction="column">
@@ -55,6 +55,17 @@ export default function AgentPages() {
           value={values.branch}
           type={"text"}
           placeholder="Enter your branch"
+        />
+      </Flex>
+      <Flex direction="column">
+        <Label text="City" ismandatory={true} />
+        <Input
+          id="city"
+          name="city"
+          onChange={handleChange}
+          value={values.city}
+          type={"text"}
+          placeholder="Enter your city"
         />
       </Flex>
     </Flex>

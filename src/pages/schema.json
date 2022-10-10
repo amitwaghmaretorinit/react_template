@@ -2,16 +2,16 @@
   "crud": {
     "name": {
       "type": "string",
-      "label": "Name",
+      "label": "Product Name",
       "required": "true",
-      "placeholder": "Enter your name",
+      "placeholder": "Enter your product name",
       "inputType": "text"
     },
     "age": {
       "type": "number",
-      "label": "Age",
+      "label": "Price",
       "required": "false",
-      "placeholder": "Enter your age",
+      "placeholder": "Enter your price",
       "inputType": "number"
     },
     "branch": {
@@ -20,11 +20,19 @@
       "required": "true",
       "placeholder": "Enter your branch",
       "inputType": "text"
+    },
+    "city": {
+      "type": "string",
+      "label": "City",
+      "required": "false",
+      "placeholder": "Enter your city",
+      "inputType": "text"
     }
   },
   "list": {
     "name": { "width": "40%", "title": "Name" ,"key":"name"},
-    "age": { "width": "20%", "title": "Age","key":"age" },
-    "branch": { "width": "40%", "title": "Branch","key":"branch" }
-  }
+    "age": { "width": "20%", "title": "Price","key":"price" },
+    "city": { "width": "20%", "title": "City","key":"city" }
+    
+   }
 }

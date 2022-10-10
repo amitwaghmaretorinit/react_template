@@ -9,16 +9,16 @@ export const getColumns = (onAction: (row: any, type: any) => void) => {
       width: "40%"
     },
     {
-      title: "Age",
-      dataIndex: "age",
-      key: "age",
+      title: "Price",
+      dataIndex: "price",
+      key: "price",
       width: "20%"
     },
     {
-      title: "Branch",
-      dataIndex: "branch",
-      key: "branch",
-      width: "40%"
+      title: "City",
+      dataIndex: "city",
+      key: "city",
+      width: "20%"
     }
   ];
   return columns;
@@ -27,11 +27,10 @@ export const getColumns = (onAction: (row: any, type: any) => void) => {
 export const getDummyData = () => {
   return new Array(1000).fill("").map((item: any, index) => {
     const dummyObject = {
+      id: Math.random(),
       name: "name" + index,
-
-      age: "age" + index,
-
-      branch: "branch" + index
+      price: "price" + index,
+      city: "city" + index
     };
     return dummyObject;
   });
