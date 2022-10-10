@@ -141,7 +141,7 @@ function AgreementCheckBox(props: any) {
 
         <>
           <Flex direction="column" top={10}>
-            <Label text={"Enter your full name"} ismandatory={true} />
+            <Label text={"Enter your full name"} isMandatory={true} />
             <Input
               placeholder="Ex.: John Doe"
               id={agreementInputBoxId}
