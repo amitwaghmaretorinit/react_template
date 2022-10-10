@@ -116,7 +116,7 @@ const DataTable = (p: DataTableType) => {
   }, [showLoadMore]);
 
   const removeScrollListener = (tableElement: Element) => {
-    tableElement.removeEventListener("scroll", () => {});
+    tableElement.removeEventListener("scroll", () => { });
   };
   const scrollConfiguration = scrollConfig || scroll;
 
@@ -140,105 +140,107 @@ const DataTable = (p: DataTableType) => {
       sideBarCollapsed
         ? width + 200
         : sideBarCollapsed === false
-        ? width - 210
-        : width
+          ? width - 210
+          : width
     );
     // eslint-disable-next-line
   }, [sideBarCollapsed, isUpdated]);
   return (
-    <Wrapper className={className}  isData={!!dataSource.length}>
+    <Wrapper className={className} isData={!!dataSource.length}>
       <div ref={ref} style={{ width: "100%" }}>
-      <Flex direction="column" style={{display: "grid", width: "100%"}}>
-        <TableContainer
-          id={"data_table"}
-          showCustomEmpty={!props.loading && !!renderEmpty}
-          // @ts-ignore
-          onScroll={(e: {
-            target: {
-              scrollHeight: number;
-              scrollTop: number;
-              clientHeight: number;
-            };
-          }) => {
-            if (
-              infinity &&
-              !props.loading &&
-              e.target.scrollHeight &&
-              e.target.scrollTop
-            ) {
-              const bottom =
-                Math.round(e.target.scrollHeight - e.target.scrollTop) ===
-                e.target.clientHeight;
-
-              if (bottom) {
-                onFetch();
-              }
-            }
-          }}
-        >
-          <Table
-            onRow={(record, rowIndex) => {
-              return {
-                onClick: (event) =>
-                  onRowClick && onRowClick({ event, record, rowIndex }),
+        <Flex direction="column" style={{ display: "grid", width: "100%" }}>
+          <TableContainer
+            id={"data_table"}
+            showCustomEmpty={!props.loading && !!renderEmpty}
+            // @ts-ignore
+            onScroll={(e: {
+              target: {
+                scrollHeight: number;
+                scrollTop: number;
+                clientHeight: number;
               };
+            }) => {
+              if (
+                infinity &&
+                !props.loading &&
+                e.target.scrollHeight &&
+                e.target.scrollTop
+              ) {
+                const bottom =
+                  Math.round(e.target.scrollHeight - e.target.scrollTop) ===
+                  e.target.clientHeight;
+
+                if (bottom) {
+                  onFetch();
+                }
+              }
             }}
-            dataSource={dataSource.map((item, index) => ({
-              ...item,
-              key: item.id || index,
-            }))}
-            scroll={scrollConfiguration}
-            pagination={false}
-            {...restprops}
-            showSorterTooltip={false}
-            style={{ ...style, width: tableWidth }}
-            rowClassName={rowClassName}
-            id={id}
-            {...(firstColumnSelectable
-              ? {
+          >
+            <Table
+              data-testid={'data_table'}
+
+              onRow={(record, rowIndex) => {
+                return {
+                  onClick: (event) =>
+                    onRowClick && onRowClick({ event, record, rowIndex }),
+                };
+              }}
+              dataSource={dataSource.map((item, index) => ({
+                ...item,
+                key: item.id || index,
+              }))}
+              scroll={scrollConfiguration}
+              pagination={false}
+              {...restprops}
+              showSorterTooltip={false}
+              style={{ ...style, width: tableWidth }}
+              rowClassName={rowClassName}
+              id={id}
+              {...(firstColumnSelectable
+                ? {
                   rowKey: rowKey,
                   rowSelection: rowSelection,
                   components: VList({
                     height: rowHeight,
                   }),
                 }
-              : {})}
-            {...(isVirtualized
-              ? {
+                : {})}
+              {...(isVirtualized
+                ? {
                   components: VList({
                     height: rowHeight,
                   }),
                 }
-              : {})}
-            {...(footer
-              ? {
+                : {})}
+              {...(footer
+                ? {
                   summary: footer,
                 }
-              : {})}
-          />
+                : {})}
+            />
 
-          {renderEmpty && !props.loading && !dataSource.length && (
-            <EmptyContainer>{renderEmpty()}</EmptyContainer>
-          )}
-          {showLoadMoreState && nextPageURL && (
-            <LoadMoreContainer>
-              <Flex>
-                <Button
-                  variant="secondary"
-                  size={"medium"}
-                  isLoading={showLoadMoreLoader}
-                  text={"Load More"}
-                  onClick={async () => {
-                    setShowLoadMoreLoader(true);
-                    const res = await onFetch();
-                    setShowLoadMoreLoader(false);
-                    setShowMoreState(false);
-                  }}
-                />
-              </Flex>
-            </LoadMoreContainer>
-          )}
-        </TableContainer>
+            {renderEmpty && !props.loading && !dataSource.length && (
+              <EmptyContainer data-testid={'empty_table'}>{renderEmpty()}</EmptyContainer>
+            )}
+            {showLoadMoreState && nextPageURL && (
+              <LoadMoreContainer>
+                <Flex>
+                  <Button
+                    variant="secondary"
+                    size={"medium"}
+                    isLoading={showLoadMoreLoader}
+                    text={"Load More"}
+                    onClick={async () => {
+                      setShowLoadMoreLoader(true);
+                      const res = await onFetch();
+                      setShowLoadMoreLoader(false);
+                      setShowMoreState(false);
+                    }}
+                  />
+                </Flex>
+              </LoadMoreContainer>
+            )}
+          </TableContainer>
         </Flex>
       </div>
     </Wrapper>

@@ -17,7 +17,7 @@
     "build:stg": "dotenv -e .env.stg react-app-rewired build",
     "build:prod": "dotenv -e .env.prod react-app-rewired build",
     "start-build": "http-server ./build",
-    "test": "react-app-rewired test --env=jsdom --collectCoverageFrom=src/**/**/*.{ts,tsx}",
+    "test": "react-app-rewired test  --env=jsdom --collectCoverageFrom=src/**/**/*.{ts,tsx} ",
     "test coverage": "react-app-rewired test --coverage --env=jsdom --collectCoverageFrom=src/**/**/*.{ts,tsx}",
     "test:watch": "test --watch",
     "eject": "react-app-rewired eject"
