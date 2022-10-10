@@ -1,10 +1,10 @@
-import { fireEvent, render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import Accordion from '..'
 
 
 export const accordinTests = describe('According Tests', () => {
 
-    it('it shoud render According', async () => {
+    it('it should render According', async () => {
         const onChangeFn = jest.fn()
         const FirstAccording = () => <div>First According</div>
         render(<Accordion

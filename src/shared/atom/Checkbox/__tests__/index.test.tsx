@@ -3,9 +3,9 @@ import { CheckboxProps } from 'antd'
 import Checkbox from '..'
 
 
-export const accordinTests = describe('According Tests', () => {
+export const checkboxTests = describe('Checkbox Tests', () => {
 
-    it('it shoud render CheckBox', async () => {
+    it('it should render CheckBox', async () => {
         render(<Checkbox
             checked={true}
         />)
