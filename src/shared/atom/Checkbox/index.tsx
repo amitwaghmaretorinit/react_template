@@ -32,6 +32,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
           onChange={onChange}
           style={style}
           disabled={disabled}
+          data-testid={'checkbox'}
         />
         <span style={{ marginLeft: 8 }}> {name}</span>
       </Flex>

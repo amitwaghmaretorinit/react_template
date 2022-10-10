@@ -19,8 +19,8 @@ export interface AccordionProps {
 const Accordion: FC<AccordionProps> = ({onChange, children, title,subTitle, className,expandIconPosition,activeKey,extra,defaultActiveKey,accordianKey }) => {
   
   return (
-    <Wrapper>
-      <Collapse onChange={onChange} ghost={true} defaultActiveKey={defaultActiveKey}  expandIconPosition={expandIconPosition} className={className}
+    <Wrapper  >
+      <Collapse data-testid={'accordain'}  onChange={onChange} ghost={true} defaultActiveKey={defaultActiveKey}  expandIconPosition={expandIconPosition} className={className}
       {...(activeKey
         ? {
           activeKey: activeKey,
