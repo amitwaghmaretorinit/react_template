@@ -135,9 +135,8 @@ export const SelectInputWithCheckBox: FC<SelectProps> = ({
        
         allowClear={allowClear}
         //className={`${className} ${error?'errorClass':''}`}
-        suffixIcon={() =>
-          toggleIcon ? <SearchOutlined /> : <img alt="" src={DropdownIcon} />
-        }
+        //@ts-ignore
+        suffixIcon={() => toggleIcon ? <SearchOutlined /> : <img alt="" src={DropdownIcon} />}
         style={{ width: "100%" }}
       />
       <span className="errormsg" style={{ color: "red" }}>

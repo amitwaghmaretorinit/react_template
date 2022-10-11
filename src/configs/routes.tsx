@@ -19,7 +19,7 @@ const RoutesComponent = () => {
 const Header = () => {
   return <Flex direction='column' justifyContent={'center'} style={{padding:10,borderBottom:'1px solid'}} bottom={20} >
     <Flex justifyContent={'center'}>
-      <img src='https://torinit.com/static/media/loader.e1dc4171.gif' style={{ width: 300 }} />
+      <img src='https://torinit.com/static/media/loader.e1dc4171.gif' style={{ width: 300 }} alt={''} />
     </Flex>
   </Flex>
 }
