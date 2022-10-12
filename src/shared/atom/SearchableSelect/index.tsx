@@ -42,7 +42,7 @@ function SearchableSelect(props: SearchableSelectProps) {
                         onChange(null)
                     }}
                     value={value && value[labelValue] ? value[labelValue] : searchedValue}
-                    onSelect={(e) => {
+                    onSelect={(e : Event) => {
                         onChange(customOptions.find((i: any) => i[keyValue] === e))
                         setSearchedValue(null)
                     }}

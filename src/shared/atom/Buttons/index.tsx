@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { PrimaryBtn, SecondaryBtn, TertiaryBtn, GhostBtn } from "./style";
 
 export interface ButtonProps {
@@ -11,7 +11,7 @@ export interface ButtonProps {
   type?: string;
   isLoading?: boolean;
   isDisable?: boolean;
-  size?: "middle" | "small" | "large" | "default" | any;
+  size?: "middle" | "small" | "large" | "default" | any | string;
   variant?: string;
 }
 

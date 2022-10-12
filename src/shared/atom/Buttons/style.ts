@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Button } from "antd";
-import "@constant/color/Color.css";
+import "../../constant/color/Color.css";
 
 export const PrimaryBtn = styled(Button)`
 
@@ -21,6 +21,7 @@ export const PrimaryBtn = styled(Button)`
   align-items: center;
   justify-content: center;
   &:disabled {
+    border: 0px;
     background-color: var(--color-system-gray-gray-6) !important;;
     color: var(--color-system-gray-gray-4) !important;;
     cursor: default;
