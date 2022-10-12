@@ -10,7 +10,7 @@ export default {
           size: { control: 'radio', options: [ "small", "middle","large", "default"] ,  defaultValue : 'default'},
           variant: { control: 'select', options: ["primary", "secondary", "tertiary", "ghost"] , defaultValue:"primary"},
           onClick: {action : 'HanldeClick'},
-          isLoading : { control: 'boolean' , description:"Button text Visible to User" ,defaultValue : false  },
+          isLoading : { control: 'boolean' , description:"Button Loading condition" , defaultValue : false  },
      }
 } as ComponentMeta<typeof Button>;
 
